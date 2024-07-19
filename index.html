@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>window.console = window.console || function(t) {};</script>
+  <title>vauvision</title> 
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="language_popup">
+    <div class="language_popup__close"></div>
+    <div class="language_popup__block">
+      <div class="language_popup__back">
+        <img src="./img/language/language_popup__back.svg" alt="background">                  
+      </div>
+      <div class="language_popup__flex">
+        <div class="language_popup__top">
+          <button class="header__language language_popup__language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+              <path d="M4.36302 11.0833L23.4964 11.0833M4.36302 17.9167L23.4964 17.9167M13.3602 4.25C11.4416 7.32456 10.4244 10.8759 10.4244 14.5C10.4244 18.1241 11.4416 21.6754 13.3602 24.75M14.4991 4.25C16.4178 7.32456 17.435 10.8759 17.435 14.5C17.435 18.1241 16.4178 21.6754 14.4991 24.75M3.67969 14.5C3.67969 15.846 3.94481 17.1789 4.45992 18.4225C4.97503 19.6661 5.73004 20.796 6.68184 21.7478C7.63364 22.6996 8.76359 23.4547 10.0072 23.9698C11.2508 24.4849 12.5836 24.75 13.9297 24.75C15.2757 24.75 16.6086 24.4849 17.8522 23.9698C19.0958 23.4547 20.2257 22.6996 21.1775 21.7478C22.1293 20.796 22.8843 19.6661 23.3995 18.4225C23.9146 17.1789 24.1797 15.846 24.1797 14.5C24.1797 11.7815 23.0998 9.1744 21.1775 7.25216C19.2553 5.32991 16.6482 4.25 13.9297 4.25C11.2112 4.25 8.60409 5.32991 6.68184 7.25216C4.75959 9.1744 3.67969 11.7815 3.67969 14.5Z" stroke="currentColor" stroke-width="1.13889" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            EN             
+          </button>
+          <button class="header__language language_popup__language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+              <path d="M4.36302 11.0833L23.4964 11.0833M4.36302 17.9167L23.4964 17.9167M13.3602 4.25C11.4416 7.32456 10.4244 10.8759 10.4244 14.5C10.4244 18.1241 11.4416 21.6754 13.3602 24.75M14.4991 4.25C16.4178 7.32456 17.435 10.8759 17.435 14.5C17.435 18.1241 16.4178 21.6754 14.4991 24.75M3.67969 14.5C3.67969 15.846 3.94481 17.1789 4.45992 18.4225C4.97503 19.6661 5.73004 20.796 6.68184 21.7478C7.63364 22.6996 8.76359 23.4547 10.0072 23.9698C11.2508 24.4849 12.5836 24.75 13.9297 24.75C15.2757 24.75 16.6086 24.4849 17.8522 23.9698C19.0958 23.4547 20.2257 22.6996 21.1775 21.7478C22.1293 20.796 22.8843 19.6661 23.3995 18.4225C23.9146 17.1789 24.1797 15.846 24.1797 14.5C24.1797 11.7815 23.0998 9.1744 21.1775 7.25216C19.2553 5.32991 16.6482 4.25 13.9297 4.25C11.2112 4.25 8.60409 5.32991 6.68184 7.25216C4.75959 9.1744 3.67969 11.7815 3.67969 14.5Z" stroke="currentColor" stroke-width="1.13889" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            EN             
+          </button>
+          <button class="header__language language_popup__language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+              <path d="M4.36302 11.0833L23.4964 11.0833M4.36302 17.9167L23.4964 17.9167M13.3602 4.25C11.4416 7.32456 10.4244 10.8759 10.4244 14.5C10.4244 18.1241 11.4416 21.6754 13.3602 24.75M14.4991 4.25C16.4178 7.32456 17.435 10.8759 17.435 14.5C17.435 18.1241 16.4178 21.6754 14.4991 24.75M3.67969 14.5C3.67969 15.846 3.94481 17.1789 4.45992 18.4225C4.97503 19.6661 5.73004 20.796 6.68184 21.7478C7.63364 22.6996 8.76359 23.4547 10.0072 23.9698C11.2508 24.4849 12.5836 24.75 13.9297 24.75C15.2757 24.75 16.6086 24.4849 17.8522 23.9698C19.0958 23.4547 20.2257 22.6996 21.1775 21.7478C22.1293 20.796 22.8843 19.6661 23.3995 18.4225C23.9146 17.1789 24.1797 15.846 24.1797 14.5C24.1797 11.7815 23.0998 9.1744 21.1775 7.25216C19.2553 5.32991 16.6482 4.25 13.9297 4.25C11.2112 4.25 8.60409 5.32991 6.68184 7.25216C4.75959 9.1744 3.67969 11.7815 3.67969 14.5Z" stroke="currentColor" stroke-width="1.13889" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            EN             
+          </button>
+        </div>
+        <h3 class="language_popup__head">Выберите регион</h3>
+        <p class="language_popup__desc">Пожалуйста, укажите страну, в которой вы проживаете. Это позволит нам показать вам подходящую версию сайта</p>
+        <div class="language_popup__buttons">
+          <div class="language_popup__region">
+            <button class="language_popup__button language_popup__region_button">
+              <span>выберите регион</span>
+              <div class="language_popup__region_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
+                  <path d="M19 1L10 10L1 0.999999" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+            </button>
+            <div class="language_popup__region_info">
+              <div class="language_popup__region_information">
+                <input type="text" id="language_popup__region_search" class="language_popup__region_search" placeholder="Искать...">
+                <div class="language_popup__region_flex">
+                  <ul class="language_popup__region_list" id="language_popup__filter">
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">Brutan</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">Bolivia</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">herzegovina</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">botswana</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">brazil</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">Brutan</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">Bolivia</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">herzegovina</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">botswana</p>
+                    </li>
+                    <li class="language_popup__region_item">
+                      <p class="language_popup__region_name">brazil</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="language_popup__button language_popup__confirm">
+            <span>Подтвердить</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header_min__container">
+      <div class="header_min__background"></div>
+      <div class="header_min__text">
+        <a href="#hero" class="header_min__logo">
+          <svg width="250" height="45" viewBox="0 0 250 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_115_2845)">
+            <path d="M240.999 31.479L233.728 21.0138H223L236.785 41H250V1H240.999V31.479Z" fill="currentColor"/>
+            <path d="M78.1191 0V27.182C78.1191 32.8775 76.4364 36.1126 71 36.1126V32.5556C66.2096 32.5556 63.8808 29.6254 63.8808 23.5976V0.769018H55V23.5976C55 34.3002 59.8273 41.4023 71 41.4023V45C80.8691 45 87 38.1726 87 27.182V12.7102L78.1191 0Z" fill="currentColor"/>
+            <path d="M129 1H120V41H129V1Z" fill="currentColor"/>
+            <path d="M174 1H165V41H174V1Z" fill="currentColor"/>
+            <path d="M148.233 9.8066L151.147 14.1058L151.373 14.4401H151.777H160.563H162L161.193 13.249L153.117 1.33433L152.891 1H152.488H132.437H131.676V1.76269V17.4473V18.21H132.437H135.414L140.002 24.981L140.229 25.3154H140.632H152.532V32.1934H144.767L141.853 27.8942L141.627 27.5599H141.224H132.437H131L131.807 28.751L139.883 40.6657L140.109 41H140.512H160.563H161.324V40.2373V24.5527V23.79H160.563H157.322L152.747 17.0198L152.521 16.6846H152.116H140.468V9.8066H148.233Z" fill="currentColor"/>
+            <path d="M205.108 7.58949L207.598 4.30203L207.024 3.87348C203.635 1.33942 199.586 0 195.314 0C184.664 0 176 8.48905 176 18.9235C176 26.1214 179.474 31.1405 184.557 34.6589L182.058 37.8975L182.723 38.2908C185.724 40.0632 189.169 41 192.686 41C203.336 41 212 32.511 212 22.0765C212 16.4351 209.498 11.1974 205.108 7.58949ZM192.686 32.2046C190.987 32.2046 189.068 31.6914 187.489 30.7988L189.929 27.5721C187.149 25.9468 184.977 22.5071 184.977 18.9235C184.977 13.3388 189.614 8.79538 195.314 8.79538C197.79 8.79538 200.283 9.71874 202.308 11.2739L199.731 14.6632C201.835 16.5764 203.023 19.2272 203.023 22.0765C203.023 27.6612 198.386 32.2046 192.686 32.2046Z" fill="currentColor"/>
+            <path d="M108.959 1H108.197V1.76269V31.479L101.096 21.0137H104.778H106.214L105.925 20.5863L92.9015 1.33526L92.6748 1H92.2701H83.4386H82L82.8078 2.19091L95.5775 21.0074H91.8957H90.4532L90.7364 21.4296L103.847 40.6669L104.074 41H104.477H116.238H117V40.2373V1.76269V1H116.238H108.959Z" fill="currentColor"/>
+            <path d="M8.04099 1H8.8034V1.76269V31.479L15.904 21.0137H12.2224H10.7859L11.0751 20.5863L24.0985 1.33526L24.3252 1H24.7299H33.5614H35L34.1922 2.19091L21.4225 21.0074H25.1043H26.5468L26.2636 21.4296L13.1527 40.6669L12.9257 41H12.5228H0.762413H0V40.2373L1.73778e-09 1.76269L1.79771e-09 1H0.762413H8.04099Z" fill="currentColor"/>
+            <path d="M38.8804 1L38.65 1.33307L25.0588 21.0074H29.7095L16.8173 39.8098L16 41H26.7976L27.0279 40.6655L35.1497 28.8681H43.0645V41H52V1H38.8804ZM43.0645 24.7148L40.6039 21.0193H35.8036L43.0645 10.521V24.7148Z" fill="currentColor"/>
+            <path d="M223.982 10.521L231.294 21.0411H242L228.188 1H215V41H223.982V10.521Z" fill="currentColor"/>
+            </g><defs><clipPath id="clip0_115_2845"><rect width="250" height="45" fill="currentColor"/></clipPath></defs>
+          </svg>
+        </a>
+        <nav class="header_min__nav">
+          <ul class="header__nav_list">
+            <li class="header__nav_item">
+              <a href="#performers" class="header__nav_link">О лейбле</a>
+            </li>
+            <li class="header__nav_item">
+              <a href="#advantages" class="header__nav_link">Преимущества</a>
+            </li>
+            <li class="header__nav_item">
+              <a href="#reviews" class="header__nav_link">Отзывы</a>
+            </li>
+            <li class="header__nav_item">
+              <a href="#price" class="header__nav_link">Цены</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__language header__language_mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+            <path d="M4.36302 11.0833L23.4964 11.0833M4.36302 17.9167L23.4964 17.9167M13.3602 4.25C11.4416 7.32456 10.4244 10.8759 10.4244 14.5C10.4244 18.1241 11.4416 21.6754 13.3602 24.75M14.4991 4.25C16.4178 7.32456 17.435 10.8759 17.435 14.5C17.435 18.1241 16.4178 21.6754 14.4991 24.75M3.67969 14.5C3.67969 15.846 3.94481 17.1789 4.45992 18.4225C4.97503 19.6661 5.73004 20.796 6.68184 21.7478C7.63364 22.6996 8.76359 23.4547 10.0072 23.9698C11.2508 24.4849 12.5836 24.75 13.9297 24.75C15.2757 24.75 16.6086 24.4849 17.8522 23.9698C19.0958 23.4547 20.2257 22.6996 21.1775 21.7478C22.1293 20.796 22.8843 19.6661 23.3995 18.4225C23.9146 17.1789 24.1797 15.846 24.1797 14.5C24.1797 11.7815 23.0998 9.1744 21.1775 7.25216C19.2553 5.32991 16.6482 4.25 13.9297 4.25C11.2112 4.25 8.60409 5.32991 6.68184 7.25216C4.75959 9.1744 3.67969 11.7815 3.67969 14.5Z" stroke="currentColor" stroke-width="1.13889" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="header__language_text">EN</p>              
+        </button>
+      </div>
+    </div>
+    <div class="container header__container">
+      <div class="header__block">
+        <div class="header__wrapper">
+        <div class="header__navigation">
+          <nav class="header__nav">
+            <ul class="header__nav_list">
+              <li class="header__nav_item">
+                <a href="#performers" class="header__nav_link body_caption">О лейбле</a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#advantages" class="header__nav_link body_caption">Преимущества</a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#reviews" class="header__nav_link body_caption">Отзывы</a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#price" class="header__nav_link body_caption">Цены</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+          <a href="#hero" class="header__logo">
+            <svg width="250" height="45" viewBox="0 0 250 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_115_2845)">
+              <path d="M240.999 31.479L233.728 21.0138H223L236.785 41H250V1H240.999V31.479Z" fill="currentColor"/>
+              <path d="M78.1191 0V27.182C78.1191 32.8775 76.4364 36.1126 71 36.1126V32.5556C66.2096 32.5556 63.8808 29.6254 63.8808 23.5976V0.769018H55V23.5976C55 34.3002 59.8273 41.4023 71 41.4023V45C80.8691 45 87 38.1726 87 27.182V12.7102L78.1191 0Z" fill="currentColor"/>
+              <path d="M129 1H120V41H129V1Z" fill="currentColor"/>
+              <path d="M174 1H165V41H174V1Z" fill="currentColor"/>
+              <path d="M148.233 9.8066L151.147 14.1058L151.373 14.4401H151.777H160.563H162L161.193 13.249L153.117 1.33433L152.891 1H152.488H132.437H131.676V1.76269V17.4473V18.21H132.437H135.414L140.002 24.981L140.229 25.3154H140.632H152.532V32.1934H144.767L141.853 27.8942L141.627 27.5599H141.224H132.437H131L131.807 28.751L139.883 40.6657L140.109 41H140.512H160.563H161.324V40.2373V24.5527V23.79H160.563H157.322L152.747 17.0198L152.521 16.6846H152.116H140.468V9.8066H148.233Z" fill="currentColor"/>
+              <path d="M205.108 7.58949L207.598 4.30203L207.024 3.87348C203.635 1.33942 199.586 0 195.314 0C184.664 0 176 8.48905 176 18.9235C176 26.1214 179.474 31.1405 184.557 34.6589L182.058 37.8975L182.723 38.2908C185.724 40.0632 189.169 41 192.686 41C203.336 41 212 32.511 212 22.0765C212 16.4351 209.498 11.1974 205.108 7.58949ZM192.686 32.2046C190.987 32.2046 189.068 31.6914 187.489 30.7988L189.929 27.5721C187.149 25.9468 184.977 22.5071 184.977 18.9235C184.977 13.3388 189.614 8.79538 195.314 8.79538C197.79 8.79538 200.283 9.71874 202.308 11.2739L199.731 14.6632C201.835 16.5764 203.023 19.2272 203.023 22.0765C203.023 27.6612 198.386 32.2046 192.686 32.2046Z" fill="currentColor"/>
+              <path d="M108.959 1H108.197V1.76269V31.479L101.096 21.0137H104.778H106.214L105.925 20.5863L92.9015 1.33526L92.6748 1H92.2701H83.4386H82L82.8078 2.19091L95.5775 21.0074H91.8957H90.4532L90.7364 21.4296L103.847 40.6669L104.074 41H104.477H116.238H117V40.2373V1.76269V1H116.238H108.959Z" fill="currentColor"/>
+              <path d="M8.04099 1H8.8034V1.76269V31.479L15.904 21.0137H12.2224H10.7859L11.0751 20.5863L24.0985 1.33526L24.3252 1H24.7299H33.5614H35L34.1922 2.19091L21.4225 21.0074H25.1043H26.5468L26.2636 21.4296L13.1527 40.6669L12.9257 41H12.5228H0.762413H0V40.2373L1.73778e-09 1.76269L1.79771e-09 1H0.762413H8.04099Z" fill="currentColor"/>
+              <path d="M38.8804 1L38.65 1.33307L25.0588 21.0074H29.7095L16.8173 39.8098L16 41H26.7976L27.0279 40.6655L35.1497 28.8681H43.0645V41H52V1H38.8804ZM43.0645 24.7148L40.6039 21.0193H35.8036L43.0645 10.521V24.7148Z" fill="currentColor"/>
+              <path d="M223.982 10.521L231.294 21.0411H242L228.188 1H215V41H223.982V10.521Z" fill="currentColor"/>
+              </g><defs><clipPath id="clip0_115_2845"><rect width="250" height="45" fill="currentColor"/></clipPath></defs>
+              </svg>
+          </a>
+          <div class="header__profile">
+            <button class="header__language header__language_desktop desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                <path d="M4.36302 11.0833L23.4964 11.0833M4.36302 17.9167L23.4964 17.9167M13.3602 4.25C11.4416 7.32456 10.4244 10.8759 10.4244 14.5C10.4244 18.1241 11.4416 21.6754 13.3602 24.75M14.4991 4.25C16.4178 7.32456 17.435 10.8759 17.435 14.5C17.435 18.1241 16.4178 21.6754 14.4991 24.75M3.67969 14.5C3.67969 15.846 3.94481 17.1789 4.45992 18.4225C4.97503 19.6661 5.73004 20.796 6.68184 21.7478C7.63364 22.6996 8.76359 23.4547 10.0072 23.9698C11.2508 24.4849 12.5836 24.75 13.9297 24.75C15.2757 24.75 16.6086 24.4849 17.8522 23.9698C19.0958 23.4547 20.2257 22.6996 21.1775 21.7478C22.1293 20.796 22.8843 19.6661 23.3995 18.4225C23.9146 17.1789 24.1797 15.846 24.1797 14.5C24.1797 11.7815 23.0998 9.1744 21.1775 7.25216C19.2553 5.32991 16.6482 4.25 13.9297 4.25C11.2112 4.25 8.60409 5.32991 6.68184 7.25216C4.75959 9.1744 3.67969 11.7815 3.67969 14.5Z" stroke="currentColor" stroke-width="1.13889" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              EN             
+            </button>
+            <div class="header__account">
+              <svg width="22" height="28" viewBox="0 0 22 28" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 11C14.5376 11 17 8.53757 17 5.5C17 2.46243 14.5376 0 11.5 0C8.46243 0 6 2.46243 6 5.5C6 8.53757 8.46243 11 11.5 11Z" fill="currentColor"/>
+              <path d="M22 21.5C22 25.0894 22 28 11 28C0 28 0 25.0894 0 21.5C0 17.9106 4.92525 15 11 15C17.0748 15 22 17.9106 22 21.5Z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="header__hamburger">
+              <svg width="36" height="20" viewBox="0 0 36 20" xmlns="http://www.w3.org/2000/svg">
+                <line x1="18" y1="1.09242" x2="36" y2="1.09242" stroke="white" stroke-width="1.81516"/>
+                <line x1="9" y1="10.0924" x2="36" y2="10.0924" stroke="white" stroke-width="1.81516"/>
+                <line x1="7.93454e-08" y1="19.0924" x2="36" y2="19.0924" stroke="white" stroke-width="1.81516"/>
+                </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero" class="hero">
+      <div class="hero__background_img">
+        <img src='img/hero/hero_background.png'/>
+      </div>
+      <div class="hero__background"></div>
+      <div class="hero__star">
+        <img src="./img/hero/hero_star.svg" alt="star" />
+      </div>
+      <div class="container hero__container"> 
+        <div class="hero__block">
+          <div class="hero__text">
+            <h1 class="hero__head">Выложи <br> трек <br> на все <br> площадки <br> и <span>продавай <br> свою музыку <br> во всем мире</span></h1>
+            <button class="hero__btn btn">Выложить музыку <br> на площадках</button>
+          </div>
+          <div class="hero__video">
+            <div class="hero__video_container">
+              <button class="hero__video_img" vid="b7ui4o_zK0Q" onclick="video_load(this)">
+                <img src="img/hero/hero_human.webp" alt="human"/>
+                <div class="hero__video_pause pause">
+                  <svg width="35" height="39" viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.3141 17.9493C34.5078 18.6385 34.5078 20.3615 33.3141 21.0507L3.43592 38.3009C2.24217 38.9901 0.749998 38.1286 0.749998 36.7502L0.75 2.24984C0.75 0.87142 2.24218 0.00991245 3.43592 0.699121L33.3141 17.9493Z" fill="#D9D9D9"/>
+                  </svg> 
+                </div>
+              </button>
+            </div>
+            <p class="hero__video_text">Посмотри это видео</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="users">
+      <div class="users__blot-top">
+        <img src="./img/users/users_blot-top.png" alt="blot"/>
+      </div>
+      <div class="users__blot-bottom">
+        <img src="./img/users/users_blot-bottom.png" alt="blot"/>
+        <img src="./img/users/user__blot_bottom_min.svg" alt="blot"/>
+      </div>
+      <div class="container users__container">
+        <div class="users__block">
+          <h2 class="users__title"><span class="users__numbers">10 612</span> 
+            <span class="users__title_p-1">Артистов</span> 
+            <span class="users__title_p-2"> Выкладывают</span> 
+            <span class="users__title_p-3">треки через нас</span> 
+          </h2>
+          <ul class="users__subtitle">
+            <li class="users__subtitle_item users__subtitle_item-1">
+              <img src="./img/users/users_subtitle.svg" alt="icon"/>
+              <p>Бесплатно продвигаем ваши <br> треки в редакторские плейлисты</p>
+            </li>
+            <li class="users__subtitle_item users__subtitle_item-2">
+              <img src="./img/users/users_subtitle.svg" alt="icon"/>
+              <p>Ответим в течение 3 часов, <br> работаем по договору</p>
+            </li>
+            <li class="users__subtitle_item users__subtitle_item-3">
+              <img src="./img/users/users_subtitle.svg" alt="icon"/>
+              <p>вы сохраняете права и можете <br> вывести заработанную сумму</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="performers" class="performers">
+      <div class="background_blot">
+        <div class="background_blot_1">
+          <img src="./img/blot/background_blot_1.png" alt="blot-top"/>
+        </div>
+        <div class="performers__star_top">
+          <img src="./img/performers/performers_star_top.svg" alt="star"/>    
+        </div>
+        <div class="background_blot_2">
+          <img src="./img/blot/background_blot_2.png" alt="blot-top"/>
+        </div>
+        <div class="performers__star_bottom">
+          <img src="./img/performers/performers_star_bottom.svg" alt="star"/>
+        </div>
+        <div class="background_blot_3">
+          <img src="./img/blot/background_blot_3.png" alt="blot-top"/>
+        </div>
+      </div>
+      <div class="container performers__container">
+        <div class="performers__block">
+          <div class="performers__logo">
+            <img src="./img/performers/performers_logo.svg" alt="logo"/>    
+          </div>
+          <div class="performers__text">
+            <div class="performers__text_wrapper performers__text_1">
+              <div class="performers__text_left">
+                <p class="performers__title">
+                  Музыкальный<br>
+                  лейбл, основанный<br>
+                  в июле <span>2018 года.</span></p>
+              </div>
+              <div class="performers__text_right">
+                <p class="performers__subtitle">
+                  Три дня<br>
+                  дождя
+                </p>
+                <p class="performers__subtitle">OM.</p>
+              </div>
+            </div>
+            <div class="performers__text_wrapper performers__text_2">
+              <div class="performers__text_left">
+                <p class="performers__subtitle">
+                  White punk
+                </p>
+                <p class="performers__subtitle">
+                  SxulTape<br>
+                  visio
+                </p>
+              </div>
+              <div class="performers__text_right">
+                <p class="performers__title">
+                  Мы занимаемся<br>
+                  дистрибуцией музыки<br>
+                  и менеджментом артистов.
+                </p>
+              </div>
+            </div>
+            <div class="performers__text_wrapper performers__text_3">
+              <div class="performers__text_left">
+                <p class="performers__title">
+                  Более
+                </p>
+                <div class="performers__title_box">
+                  <p class="performers__title">
+                    <span>10 612</span><br>
+                    исполнителей 
+                  </p>
+                  <p class="performers__title">
+                    выкладывают<br> 
+                    свою музыку<br>
+                    <span>через vauvision.</span>
+                  </p>
+                </div>
+              </div>
+              <div class="performers__text_right">
+                <p class="performers__subtitle">SLYKT</p>
+                <p class="performers__subtitle">Nalim</p>
+                <p class="performers__subtitle">Bob Walter</p>
+                <p class="performers__subtitle">Palmdropov</p>
+              </div>
+            </div>
+            <div class="performers__text_wrapper performers__text_4">
+              <div class="performers__text_left">
+                <p class="performers__subtitle">opium2k</p>
+                <p class="performers__subtitle">044 Rose</p>
+              </div>
+              <div class="performers__text_right">
+                <p class="performers__title"> 
+                  Количество треков в<br>
+                  нашем каталоге<br>
+                  <span>превысило 40 000 песен.</span><br>
+                  Это не просто так!<br>
+                </p>
+                <button class="performers__btn btn">список наших релизов</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="advantages" class="advantages">
+      <div class="container advantages__container">
+        <div class="advantages__star">
+          <img src="./img/advantages/advantages_star.svg" alt="star"/>
+        </div>
+        <div class="advantages__block">
+          <h2 class="advantages__title title">Преимущества</h2>
+          <div class="advantages__logo_min">
+            <img src="./img/advantages/advantages_logo_min.svg" alt="logo"/>
+          </div>
+          <div class="advantages__slider">
+            <div class="advantages__swiper swiper ">
+              <ul class="advantages__list swiper-wrapper">
+                <li class="advantages__logo_max">
+                  <img src="./img/advantages/advantages_logo_max.svg" alt="logo"/>
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_1.svg" alt="background"/>             
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">все площадки</div>
+                    <p class="advantages__item_subtitle">Ваш трек появится на всех существующих площадках и будет доступен во всем мире, на всех платформах</p>
+                  </div>  
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_2.svg" alt="background"/>                  
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">Промо на площадках</div>
+                    <p class="advantages__item_subtitle">Мы показываем ваш релиз редакторам всех площадок, чтобы попасть на витрины и плейлисты</p>
+                  </div>
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_3.svg" alt="background"/>  
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">Юридическая надежность</div>
+                    <p class="advantages__item_subtitle">Подписываем договор на каждый релиз, не пускаем пиратский контент и гарантируем исполнение обязательств</p>
+                  </div>  
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_4.svg" alt="background"/>                  
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">Права сохраняются</div>
+                    <p class="advantages__item_subtitle">Вы остаётесь правообладателем своей музыки, разрешая нам только размещать её на площадках</p>
+                  </div>
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_5.svg" alt="background"/>    
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">Быстрая поддержка</div>
+                    <p class="advantages__item_subtitle">Отвечаем в течение 3 часов, оперативно отвечаем на вопросы и вносим правки</p>
+                  </div>
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_6.svg" alt="background"/>                   
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">Отчеты со статистикой</div>
+                    <p class="advantages__item_subtitle">Каждый квартал вы получаете подробный отчёт по прослушиваниям и заработку с ваших релизов</p>
+                  </div>
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_7.svg" alt="background"/>                  
+                  </div>
+                  <div class="advantages__item_text">
+                    <div class="advantages__item_title">Простой вывод</div>
+                    <p class="advantages__item_subtitle">Простой и быстрый вывод средств через личный кабинет</p>
+                  </div>
+                </li>
+                <li class="advantages__item swiper-slide">
+                  <div class="advantages__item_svg">
+                    <img src="./img/advantages/svg/advantages__item_8.svg" alt="background"/>                  
+                  </div>
+                  <div class="advantages__item_text">
+                  <div class="advantages__item_title">Быстрые сроки</div>
+                  <p class="advantages__item_subtitle">Загрузим ваш релиз на площадки за 3 дня, часто – быстрее</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="advantages__pagination_min swiper-pagination pagination_min"></div>
+            </div>
+          </div>
+          <div class="advantages__promo">
+            <div class="advantages__promo_text">
+              <p>что такое <span>промо</span></p>
+              <p>и почему это ценно?</p>
+            </div>
+            <button class="advantages__promo_btn btn">смотреть видео</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reviews" class="reviews">
+      <div class="container reviews__container">
+        <div class="reviews__block">
+          <div class="reviews__slider">
+            <div class="reviews__top">
+              <h3 class="reviews__title title"><span>Отзывы</span><p>артистов</p></h3>
+              <div class="pagination_max reviews__counter reviews__pagination_max">
+                <span class="reviews__count">01</span><span>/</span><span class="reviews__total"></span>
+              </div>
+            </div>
+            <div class="reviews__nav swiper__navigation">
+              <div class="swiper-button-prev reviews__prev">
+                <svg width="31" height="116" viewBox="0 0 31 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 115L2 58L30 1" stroke="#E8E4DE" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="swiper-button-next reviews__next">
+                <svg width="31" height="116" viewBox="0 0 31 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L29 58L1 115" stroke="#E8E4DE" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__swiper swiper ">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__item reviews__item_1 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title"><p>андрей</p><span>осипов</span></div>
+                    <p class="reviews__item_subtitle">Самые качественные платные услуги по диструбуции музыки, которые я встречал. Цена-качество как нигде соответствует. Ваувижн действительно ВАУ и с этим не поспоришь.</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_2 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Михаил <span>Вандер</span></div>
+                    <p class="reviews__item_subtitle">После долгих поисков и перебора вариантов, посоветовали обратиться в Владимиру в VAUVISION. Это нечто) Всё было выпущено в срок и без нареканий, за что огромное спасибо! Будем работать на постоянке.</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_3 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title"><p>Константин</p><span>Парнюк</span></div>
+                    <p class="reviews__item_subtitle">Очень повезло, что VAUVISION стал первым моим дистрибьютором. Сразу же после оформления договора, трек залетел на все площадки без каких-либо трудностей) Планирую сотрудничкать дальше. Рекомендую!</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_4 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Ангелина<span>Кузнецова</span></div>
+                    <p class="reviews__item_subtitle">Долго искала дистрибутора и к своему счастью нашла лейбл VAUVISION. В процессе сразу поняла, что сделала правильный выбор, отдельный респект Владимиру за видео и полезную инфу!</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_5 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Дарья<span>Новикова</span></div>
+                    <p class="reviews__item_subtitle">Я очень рада, что друзья мне посоветовали именно этот лейбл. Всё четко, всё воремя + важный бонус в виде предложения в подборки для меня, как начинающего артиста, попадание в бодборки - дорога в жизнь. Безмерно счастлива!</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_6 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title"><p>Константин</p><span>Самарин</span></div>
+                    <p class="reviews__item_subtitle">Делали несколько релизов в прошлом и в этом году. Всё очень оперативно, без лишних вопросов и заморочек. Очень благодарен за помощь, обязательно будем сотрудничать дальше!</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_7 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Вячеслав<span>Весенёв</span></div>
+                    <p class="reviews__item_subtitle">Работа VAUVISION стоит своих денег, выплата вовремя и всегда на связи, помогают всем чем можно, отличная дистрибуция и лейбл, всем советую) Владимир Ванин ТОП</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_8 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Антон<span>Фридов</span></div>
+                    <p class="reviews__item_subtitle">Работа по дистрибуции выполняется четко и без косяков, загружал не один релиз, всё выходило вовремя и без всяких заминок. Очень радует, что существует возможность получить промо, что ещё больше мотивирует делать крутую музыку!</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_9 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Тёма<span>Зиновенко</span></div>
+                    <p class="reviews__item_subtitle">VAUVISION отлично выполняют свою работу. Хотел работать с профи, чтобы не было ответов на мои вопросы "Не знаю, ХЗ почему так получилось". Всё конкретно и четко. Если ты ищешь через кого, чтобы было всё грамотно, то к ним. Рекомендую.</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_10 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Северин<span>Наконечний</span></div>
+                    <p class="reviews__item_subtitle">Всё на высшем уровне, выполняют работу быстро и качественно, отчёты всегда вовремя, + отсылают треки на промо, что не может не радовать) В целом всё топ</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_11 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Святослав<span>Селиванов</span></div>
+                    <p class="reviews__item_subtitle">Давно сотрудничаем с данным лейблом. Дистрибуция проходит на высоком уровне. Отчёты присылают вовремя, гонорар выплачивают без задержек. Также радует теплое отношение к артистам, быстрая обратка</p>
+                  </div>
+                </li>
+                <li class="reviews__item reviews__item_12 swiper-slide">
+                  <div class="reviews__item_text">
+                    <div class="reviews__item_title">Артём<span>Кириенко</span></div>
+                    <p class="reviews__item_subtitle">Приятно работать с данным человеком, это тот самый случай, когда профессионализм и человеческие качества находятся на высоком уровне. Всё по делу, отчёты, присылаются вовремя. Однозначно рекомендую работать с ним)</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pagination_min reviews__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <section class="founder">
+      <div class="container founder__container">
+        <div class="founder__background">
+          <img class="founder__bg_max" src="./img/founder/founder.png"/>
+          <img class="founder__bg_min" src="./img/founder/founder_min.png"/>
+        </div>
+        <div class="founder__block">
+          <h3 class="founder__title title"><p>Об основателе</p><span>лейбла</span></h3>
+          <div class="founder__name"><p>Владимир</p><span>Ванин</span></div>
+          <div class="founder__wrapper">
+            <div class="founder__line">
+              <img src="./img/founder/svg/founder__line.svg" alt="line"/>
+            </div>
+            <div class="founder__box founder__box_1">
+              <div class="founder__item founder__item_1">
+                <div class="founder__item_svg">
+                  <img src="./img/founder/svg/founder__item_1.svg" alt="background"/>
+                </div>
+                <div class="founder__item_text">
+                  Прошел стажировку на лейбле Warner Music Russia
+                </div>
+              </div>
+              <div class="founder__item founder__item_2">
+                <div class="founder__item_svg">
+                  <img src="./img/founder/svg/founder__item_2.svg" alt="background"/>  
+                </div>
+                <div class="founder__item_text">
+                  Менеджер артистов Наргиз, Олег Майами в продюсерском центре Макса Фадеева (MALFA)
+                </div>
+              </div>
+            </div>
+            <div class="founder__box founder__box_2">
+              <div class="founder__item founder__item_3">
+                <div class="founder__item_svg">
+                  <img src="./img/founder/svg/founder__item_3.svg" alt="background"/> 
+                </div>
+                <div class="founder__item_text">
+                  <p>Основатель лейбла</p>
+                <div class="founder__logo">
+                  <img src="./img/founder/svg/founder__logo.svg" alt="logo"/>                   
+                </div>
+                <p>(выложено более 40 000 песен с 10 612 артистами)</p>
+                </div>
+              </div>
+              <div class="founder__item founder__item_4">
+                <div class="founder__item_svg">
+                  <img src="./img/founder/svg/founder__item_4.svg" alt="background"/> 
+                </div>
+                <div class="founder__item_text">
+                  Ex-менеджер артистов lowlife, КРЕСТ (95к подписчиков, более 6 млн прослушиваний на альбомах)
+                </div>
+              </div>
+            </div>
+            <div class="founder__box founder__box_3">
+              <div class="founder__item founder__item_5">
+                <div class="founder__item_svg">
+                  <img src="./img/founder/svg/founder__item_5.svg" alt="background"/> 
+                </div>
+                <div class="founder__item_text">
+                  Менеджер артиста remember. (ex-ZAPOMNI) (первые места чартов с треками "Я всё решу" и "Кожура")
+                </div>
+              </div>
+              <div class="founder__item founder__item_6">
+                <div class="founder__item_svg">
+                  <img src="./img/founder/svg/founder__item_6.svg" alt="background"/> 
+                </div>
+                <div class="founder__item_text">
+                  Автор образовательных роликов для начинающих артистов
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="price" class="price">
+      <div class="container price__container">
+        <div class="price__block">
+          <div class="price__slider">
+            <div class="price__top">
+              <h3 class="price__title title"><p>Стоимость</p><span>размещения</span></h3>
+              <div class="price__counter pagination_max">
+                <span class="price__count">01</span>/<span class="price__total"></span>
+              </div>
+            </div>
+            <div class="price__nav swiper__navigation">
+              <div class="swiper-button-prev price__prev">
+                <svg width="31" height="116" viewBox="0 0 31 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 115L2 58L30 1" stroke="#E8E4DE" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="swiper-button-next price__next">
+                <svg width="31" height="116" viewBox="0 0 31 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L29 58L1 115" stroke="#E8E4DE" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="price__swiper swiper ">
+              <ul class="price__list swiper-wrapper">
+                <li class="price__item swiper-slide">
+                  <div class="price__item_content">
+                    <div class="price__item_text">
+                      <div class="price__item_title"><p>Сингл</p></div>
+                      <div class="price__item_subtitle"><p>Трек официально <br> появляется на всех <br> цифровых площадках.<br> Без последующих доплат.</p></div>
+                    </div>
+                    <div class="price__item_bottom">
+                      <button class="price__item_btn btn">оформить</button>
+                      <div class="price__item_price">цена:<p>1.990₽</p></div>
+                    </div>
+                  </div>  
+                </li>
+                <li class="price__item swiper-slide">
+                  <div class="price__item_content">
+                    <div class="price__item_text">
+                      <div class="price__item_title"><p>Альбом</p></div>
+                      <div class="price__item_subtitle">
+                        <p>Релиз официально появляется на всех цифровых площадках.</p>
+                        <p>Любое количество треков.</p>
+                        <p>Без последующих доплат.</p></div>
+                    </div>
+                    <div class="price__item_bottom">
+                      <button class="price__item_btn btn">оформить</button>
+                      <div class="price__item_price">цена:<p>2.490₽</p></div>
+                    </div>
+                  </div>  
+                </li>
+                <li class="price__item swiper-slide">
+                  <div class="price__item_content">
+                    <div class="price__item_text">
+                      <div class="price__item_title"><p>Сингл + Альбом</p></div>
+                      <div class="price__item_subtitle"><p>
+                        Если вы хотите выпустить сингл <br> с будущего релиза, а после уже сам релиз,<br>то с этим пакетом это будет дешевле.</p>
+                      </div>
+                    </div>
+                    <div class="price__item_bottom">
+                      <button class="price__item_btn btn">оформить</button>
+                      <div class="price__item_price">цена:<p>4.180₽</p></div>
+                    </div>
+                  </div>  
+                </li>
+                <li class="price__item swiper-slide">
+                  <div class="price__item_content">
+                    <div class="price__item_text">
+                      <div class="price__item_title"><p>Клип</p></div>
+                      <div class="price__item_subtitle"><p>Клип официально размещается в ваших карточках артиста на площадках: ВК, Яндекс.Музыка, Apple Music, iTunes.</p></div>
+                    </div>
+                    <div class="price__item_bottom">
+                      <button class="price__item_btn btn">оформить</button>
+                      <div class="price__item_price">цена:<p>1.990₽</p></div>
+                    </div>
+                  </div>  
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="price__pagination swiper-pagination pagination_min"></div>
+        </div>
+        </div>
+      </div> 
+    </section>
+    <section class="questions">
+      <div class="questions__background">
+        <div class="background_blot_4">
+          <img src="./img/blot/background_blot_4.png" alt="blot-top"/>
+        </div>
+        <div class="questions__star">
+          <img src="./img/questions/questions_star.svg" alt="star" />           
+        </div>
+        <div class="questions__blot_bottom">
+          <img src="./img/articles/articles__blot_top.svg" alt="blot"/>
+        </div>
+      </div>
+      <div class="container questions__container">
+        <div class="questions__block">
+          <h3 class="questions__title title"><p>Вопросы</p><span>ответы</span></h3>
+          <ul class="questions__flex">
+            <li class="questions__item">
+              <div class="questions__item_text">
+                <div class="questions__item_top">
+                  <p class="questions__item_title">Когда мои треки появятся на площадках?</p> 
+                  <div class="questions__item_plus"></div>
+                </div>
+                <div class="questions__item_bottom">
+                  <p class="questions__item_answer">
+                    При заполнении формы вы сами выбираете дату выхода. Заполнить форму рекомендуется за 3 рабочих дня до желаемой даты выхода, либо раньше.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_text">
+                <div class="questions__item_top">
+                  <p class="questions__item_title">Я хочу залить один трек через вас. Мне придется размещать через вас весь будущий материал тоже?</p> 
+                  <div class="questions__item_plus"></div>
+                </div>
+                <div class="questions__item_bottom">
+                  <p class="questions__item_answer">
+                    Нет, мы подписываем отдельный договор на каждый трек. Если в будущем вы захотите выложить трек через другую компанию/лейбл, вы можете без проблем это сделать.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_text">
+                <div class="questions__item_top">
+                  <p class="questions__item_title">По договору я передаю вам <br> полные права на свою музыку?</p>
+                  <div class="questions__item_plus"></div>
+                </div>
+                <div class="questions__item_bottom">
+                  <p class="questions__item_answer">
+                    Нет, по договору мы получаем от артиста только права на цифровую дистрибуцию на конкретный релиз. Мы не имеем отношения к вашим концертам, рекламе, а также к вашим будущим трекам.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_text">
+                <div class="questions__item_top">
+                  <p class="questions__item_title">Вы берете процент с заработка песен?</p> 
+                  <div class="questions__item_plus"></div>
+                </div>
+                <div class="questions__item_bottom">
+                  <p class="questions__item_answer">
+                    Да, мы делим полученный доход в соотношении 80/20% в пользу артиста, т.е. лейбл оставляет себе 20% от суммы.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_text">
+              <div class="questions__item_top">
+                <p class="questions__item_title">Можно ли грузить free for profit биты?</p> 
+                <div class="questions__item_plus"></div>
+              </div>
+              <div class="questions__item_bottom">
+                <p class="questions__item_answer">
+                  Free for profit биты можно загружать только при наличии договора с автором бита, иначе велика вероятность конфликта на площадках. Примите во внимание: если в интернете есть "бесплатный бит для коммерческого использования" – скорее всего его загрузили на площадки уже десятки раз, и при первой же претензии (если у вас нет договора) ваш релиз будет удалён.
+                </p>
+              </div>
+            </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_text">
+                <div class="questions__item_top">
+                  <p class="questions__item_title">Как вы помогаете с рекламой?</p> 
+                  <div class="questions__item_plus"></div>
+                </div>
+                <div class="questions__item_bottom">
+                  <p class="questions__item_answer">
+                    Мы загружаем релиз на площадки и отправляем его на промо (подробно про промо: <a href="https://www.youtube.com/watch?v=Ij47DF3lBbg">https://www.youtube.com/watch?v=Ij47DF3lBbg</a>)
+                    <br>
+                    Таргет и посевы мы не делаем. Наши рекомендации по продвижению релизов подробно в этом видео: <a href="https://www.youtube.com/watch?v=FqqJd7-iXd0">https://www.youtube.com/watch?v=FqqJd7-iXd0 </a>)
+                    <br> и в этом <a href="https://www.youtube.com/watch?v=QR_OKmiGqPk">https://www.youtube.com/watch?v=QR_OKmiGqPk </a>
+                  </p>
+                </div>
+            </div>
+            </li>
+            <li class="questions__item">
+              <div class="questions__item_text">
+                <div class="questions__item_top">
+                  <p class="questions__item_title">Что такое "карточка артиста"?</p> 
+                  <div class="questions__item_plus"></div>
+                </div>
+                <div class="questions__item_bottom">
+                  <p class="questions__item_answer">
+                    Пример карточки артиста: <a href="https://vk.com/artist/krest">https://vk.com/artist/krest</a><br>
+                    Такая карточка есть у всех артистов и на всех площадках. Карточка создаётся автоматически, если артист выложил хотя бы 1 трек официально на площадки.
+                    <br>
+                    В карточке собираются все релизы артиста. Существует это просто для удобства – слушатель заходит и видит все треки исполнителя в одном месте.
+                    <br>
+                    Можно сделать оформление карточки в ВК / BOOM / Yandex Music и проч. – поставить фотографии и привязать к паблику.
+                    <br>
+                    В Apple Music и Spotify артист можем сам делать оформление своей карточки (и отслеживать статистику) с помощью сервисов для артистов.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="questions__btn ">
+              <button class="btn">Задать свой вопрос</button>
+            </li>
+          </ul>
+      </div>
+    </section>
+    <section id="articles" class="articles">
+      <div class="background_blot_5">
+        <img src="./img/blot/background_blot_5.png" alt="blot-top"/>
+      </div> 
+      <div class="container articles__container">
+        <div class="articles__block">
+          <div class="articles__slider">
+            <div class="articles__top">
+              <h3 class="articles__title  title title_black"><p>Наши</p>
+              <span>статьи</span></h3>
+              <div class="articles__pagination swiper-pagination pagination_max"></div>
+            </div>
+            <div class="articles__nav swiper__navigation">
+              <div class="swiper-button-prev articles__prev">
+                <svg width="31" height="116" viewBox="0 0 31 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30.0938 114.694L2.09375 57.6943L30.0938 0.694336" stroke="#AB1115" stroke-width="2" />
+                </svg>
+              </div>
+              <div class="swiper-button-next articles__next">
+                <svg width="31" height="116" viewBox="0 0 31 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.09375 0.694336L29.0938 57.6943L1.09375 114.694" stroke="#AB1115" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+            <div class="articles__swiper swiper ">
+              <ul class="articles__list swiper-wrapper">
+                <li class="articles__item swiper-slide">
+                  <div class="articles__item_container">
+                    <div class="articles__wrapper">
+                      <button class="articles__img" vid="jZ6srnzxDL0" onclick="video_articles(this)">
+                        <img src="./img/articles/articles_img_1.webp" alt="human"/>
+                        <div class="articles__item_pause pause">
+                          <svg width="35" height="39" viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.3141 17.9493C34.5078 18.6385 34.5078 20.3615 33.3141 21.0507L3.43592 38.3009C2.24217 38.9901 0.749998 38.1286 0.749998 36.7502L0.75 2.24984C0.75 0.87142 2.24218 0.00991245 3.43592 0.699121L33.3141 17.9493Z" fill="#D9D9D9"/>
+                          </svg> 
+                        </div>
+                      </button> 
+                      <div class="articles_video">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articles__item_text">
+                    <p>VAUVISION И ZAPOMNI. ПЕРВЫЕ Места чартов, начало работы, Вечерний Ургант, история взлёта</p>
+                  </div>
+                </li>
+                <li class="articles__item swiper-slide">
+                  <div class="articles__item_container">
+                    <div class="articles__wrapper">
+                      <a href="#articles" class="articles__img">
+                        <img src="./img/articles/articles_img_2.webp" alt="human"/>
+                      </a> 
+                    </div>
+                  </div>
+                  <div class="articles__item_text">
+                    <p>Родители против занятия музыкой</p>
+                  </div>
+                </li>
+                <li class="articles__item swiper-slide">
+                  <div class="articles__item_container">
+                    <div class="articles__wrapper">
+                      <a href="#articles" class="articles__img">
+                        <img src="./img/articles/articles_img_3.webp" alt="human"/>
+                      </a> 
+                    </div>
+                  </div>
+                  <div class="articles__item_text">
+                    <p>Как найти площадку для выступления</p>
+                  </div>
+                </li>
+                <li class="articles__item swiper-slide">
+                  <div class="articles__item_container">
+                    <div class="articles__wrapper">
+                      <button class="articles__img" vid="u62hdimda-A" onclick="video_articles(this)">
+                        <img src="./img/articles/articles_img_4.webp" alt="human"/>
+                        <div class="articles__item_pause pause">
+                          <svg width="35" height="39" viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.3141 17.9493C34.5078 18.6385 34.5078 20.3615 33.3141 21.0507L3.43592 38.3009C2.24217 38.9901 0.749998 38.1286 0.749998 36.7502L0.75 2.24984C0.75 0.87142 2.24218 0.00991245 3.43592 0.699121L33.3141 17.9493Z" fill="#D9D9D9"/>
+                          </svg> 
+                        </div>
+                      </button> 
+                      <div class="articles_video">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articles__item_text">
+                    <p>КРЕСТ + VAUVISION 2019. 100.000 подписчиков и 2 больших аванса за год карьеры</p>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+            <div class="articles__pagination_min swiper-pagination pagination_min"></div>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <section class="fill_form">
+      <div class="fill_form__blot_top">
+        <img src="./img/fill_form/fill_form__blot_top.svg" alt="blot"/>        
+      </div>
+      <div class="fill_form__star">
+        <img src="./img/fill_form/fill_form_star.svg" alt="star"/>           
+      </div>
+      <div class="fill_form__blot_bottom">
+        <img src="./img/fill_form/fill_form__blot_bottom.svg" alt="blot"/> 
+      </div>
+      <div class="container fill_form__container">
+        <div class="fill_form__block">
+            <p class="fill_form__title">
+              ЧТОБЫ ПРОДАВАТЬ <span>музыку на всех площадках,</span> <br>вам нужно:
+            </p>
+            <ul class="fill_form__plan">
+              <li class="fill_form__item">
+                <div class="fill_form__number">//001</div>
+                <p>Заполнить форму</p>
+              </li>
+              <li class="fill_form__item">
+                <div class="fill_form__number">//002</div>
+                <p>ОПЛАТИТЬ</p>
+              </li>
+              <li class="fill_form__item">
+                <div class="fill_form__number">//003</div>
+                <p>ПОДПИСАТЬ ДОГОВОР</p>
+              </li>
+              <li class="fill_form__item">
+                <div class="fill_form__number">//004</div>
+                <p>ЖДАТЬ ДАТУ ВЫХОДА</p>
+              </li>
+              <li ><button class="fill_form__btn btn" >Заполнить форму</button></li>
+
+            </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" data-scroll-section>
+      <div class="container footer__container">
+        <div class="footer__block">
+          <div class="footer__data">
+          <div class="footer__connection">
+            <p><a class="footer__mail" href="mailto:vau@vauvision.com">vau@vauvision.com</a></p>
+            <p><a class="footer__tel" href="tel:+79935882521">+7 993 588-25-21</a></p>
+          </div>
+          <div class="footer__icon">
+            <div class="footer__messengers">
+              <a href="https://vk.com/vauvisionlabel">
+                <svg width="52" height="32" viewBox="0 0 52 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28.3187 32C10.5534 32 0.42623 19.9884 0 0H8.89541C9.18951 14.6677 15.7492 20.8836 20.9449 22.1655V0H29.3289V12.6504C34.4436 12.1082 39.8525 6.3462 41.6682 0H50.0521C48.6541 7.81298 42.8062 13.5792 38.6505 15.9496C41.9008 17.5411 44.7715 19.7948 47.0727 22.5617C49.374 25.3285 51.0534 28.5455 52 32H42.7764C40.7944 25.9144 35.8544 21.2073 29.3289 20.5684V32H28.3187Z" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="https://t.me/vauvisionbusiness">
+                <svg width="41" height="34" viewBox="0 0 41 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.81791 14.6385C13.8242 9.84021 21.163 6.67656 24.8341 5.14757C35.3194 0.786101 37.5094 0.028656 38.9177 0.000472005C39.44 -0.00968596 39.9522 0.144336 40.3824 0.440847C40.6843 0.701277 40.8767 1.06619 40.9211 1.46252C40.9969 1.95542 41.0182 2.45518 40.9845 2.95275C40.4176 8.94185 37.9565 23.4179 36.7066 30.108C36.1785 32.9264 35.1363 33.8882 34.1258 33.9833C31.9358 34.1841 30.2528 32.5319 28.1402 31.1403C24.8165 28.9595 22.9399 27.6173 19.7147 25.4753C15.9861 23.0092 18.4049 21.6669 20.528 19.4615C21.0843 18.8837 30.7387 10.0903 30.9288 9.29415C30.9539 9.17657 30.951 9.05475 30.9204 8.93849C30.8898 8.82223 30.8324 8.71478 30.7528 8.62477C30.6372 8.5525 30.5063 8.50818 30.3707 8.49534C30.235 8.4825 30.0982 8.50148 29.9711 8.55079C29.6401 8.6236 24.333 12.1337 14.0496 19.081C12.5426 20.1168 11.1777 20.6218 9.95478 20.5959C8.60628 20.5642 6.01488 19.8314 4.08542 19.1867C1.7229 18.4187 -0.139643 18.0136 0.00823469 16.7206C0.0950836 16.0442 1.03164 15.3502 2.81791 14.6385Z" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@vauvision_main">
+                <svg width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6643 6.80016C23.7594 6.20189 22.9831 5.42092 22.3827 4.50495C21.7824 3.58897 21.3705 2.55723 21.1724 1.47272C21.0876 0.986745 21.0476 0.493657 21.0531 0H15.341V23.4235C15.2959 24.6945 14.7716 25.8981 13.8785 26.7814C12.9853 27.6648 11.7928 28.1591 10.5514 28.1606C9.77521 28.1619 9.00965 27.976 8.31658 27.618C7.37059 27.1062 6.61854 26.2853 6.17979 25.2857C5.74104 24.2861 5.64073 23.165 5.89476 22.1003C6.1488 21.0356 6.74264 20.0883 7.58204 19.4088C8.42143 18.7293 9.45829 18.3564 10.5281 18.3494C11.0088 18.3531 11.4863 18.4295 11.9452 18.576V12.5867C11.4801 12.5118 11.0105 12.4709 10.5397 12.4645C8.303 12.4598 6.1233 13.1872 4.31846 14.5408C2.51362 15.8944 1.17803 17.8033 0.506461 19.9891C-0.829174 24.3327 0.521012 29.0878 4.03615 31.8216C4.21074 31.9706 4.3475 32.0571 4.51046 32.1733C6.28812 33.4047 8.3943 34.0421 10.5397 33.9978C13.3256 33.9979 15.9976 32.8657 17.9697 30.8497C19.9418 28.8338 21.0528 26.0987 21.0589 23.2446V11.3346C23.3739 13.0346 26.1518 13.9461 29 13.9402V8.13874C27.4579 8.13817 25.95 7.67263 24.6643 6.80016Z" fill="currentColor"/>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UC92Nv8m527ePerav-nVwUkw">
+                <svg width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M49.9336 5.62154C49.6435 4.53164 49.0743 3.53784 48.283 2.73989C47.4917 1.94194 46.5062 1.3679 45.4254 1.07538C41.4527 -6.1622e-06 25.5023 0 25.5023 0C25.5023 0 9.55189 -6.1622e-06 5.57459 1.07538C4.49504 1.37045 3.51088 1.94535 2.71997 2.74291C1.92907 3.54046 1.359 4.5329 1.06639 5.62154C-2.00783e-05 9.6323 0 18 0 18C0 18 -2.00783e-05 26.3677 1.06639 30.3785C1.359 31.4671 1.92907 32.4595 2.71997 33.2571C3.51088 34.0547 4.49504 34.6296 5.57459 34.9246C9.55189 36 25.5023 36 25.5023 36C25.5023 36 41.4481 36 45.4254 34.9246C46.5062 34.6321 47.4917 34.0581 48.283 33.2601C49.0743 32.4622 49.6435 31.4684 49.9336 30.3785C51 26.3677 51 18 51 18C51 18 51 9.6323 49.9336 5.62154ZM20.3991 25.7123V10.2877L33.672 18L20.3991 25.7123Z" fill="currentColor"/>
+                </svg>
+              </a>                                                  
+            </div>
+            <div class="footer__IP">
+              <p>ИП Ванин Владимир Юрьевич <br>
+                ИНН 771476282570 <br>
+                ОГРНИП 318774600328276 <br>
+                Россия, г. Москва, Хорошевское шоссе 12к1 </p>
+            </div>
+          </div>
+          </div>
+          <div class="footer__logo">
+            <img src="./img/footer/footer__logo.svg" alt="logo"/>   
+          </div>
+          <div class="footer__policy">
+            <p>Все права защищены 2024</p>
+            <p>Дизайн сайта - <a href="https://vk.com/konshin_digital">@konshin.exe</a></p>
+            <p>Разработано <a href="https://anyera.ru/">Anyera Digital & Design</a></p>
+            <a href="https://b853f597-531f-4c29-8321-038012fb627b.filesusr.com/ugd/a9774b_04aa258af93e4512bf350769c8d95225.pdf">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.onload = function () {
+      window.setTimeout(function () {
+      document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 0);
+      }, 300);
+    };
+  </script>
+</body>
+</html>
